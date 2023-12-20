@@ -10,7 +10,9 @@ import Keyboard from "./Keyboard"
 export default function Calculator(){
   const styles = {
     calcContainer: {
-      margin: "50px"
+      marginTop: "50px",
+      width: "422px",
+      alignItmes: 'center'
     }
   }
 

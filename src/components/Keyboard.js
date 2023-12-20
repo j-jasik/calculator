@@ -7,16 +7,20 @@ export default function Keyboard(){
     keyboardContainer: {
       border: '3px solid black',
       borderTop: '0px',
-      backgroundColor: 'black'
+      backgroundColor: 'black',
+      paddingTop: "10px"
     },
     centerCol: {
-      textAlign: 'center'
+      textAlign: 'center',
+    },
+    keyRow: {
+      paddingBottom: '10px'
     }
   }
 
   return (
     <Container style={styles.keyboardContainer}>
-      <Row>
+      <Row style={styles.keyRow}>
         <Col style={styles.centerCol}>
           <Key label="clear" variant="warning" />
         </Col>
@@ -30,7 +34,7 @@ export default function Keyboard(){
           <Key label="delete" variant="danger" />
         </Col>
       </Row>
-      <Row>
+      <Row style={styles.keyRow}>
         <Col style={styles.centerCol}>
           <Key label="7" />
         </Col>
@@ -44,7 +48,7 @@ export default function Keyboard(){
           <Key label="X" />
         </Col>
       </Row>
-      <Row>
+      <Row style={styles.keyRow}>
         <Col style={styles.centerCol}>
           <Key label="4" />
         </Col>
@@ -58,7 +62,7 @@ export default function Keyboard(){
           <Key label="-" />
         </Col>
       </Row>
-      <Row>
+      <Row style={styles.keyRow}>
         <Col style={styles.centerCol}>
           <Key label="1" />
         </Col>
@@ -72,9 +76,9 @@ export default function Keyboard(){
           <Key label="+" />
         </Col>
       </Row>
-      <Row>
+      <Row style={styles.keyRow}>
         <Col xs={6} style={styles.centerCol}>
-          <Key label="0" />
+          <Key label="0" isZero={true} />
         </Col>
         <Col style={styles.centerCol}>
           <Key label="." />
